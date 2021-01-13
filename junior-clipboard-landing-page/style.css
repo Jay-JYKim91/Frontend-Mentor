@@ -39,9 +39,15 @@ body {
   background-color: hsl(171, 66%, 44%);
   box-shadow: hsl(171, 66%, 44%) 2.4px 2.4px 3.2px;
 }
+.btn-green:hover {
+  background-color: hsl(171deg 66% 55%);
+}
 .btn-blue {
   background-color: hsl(233, 100%, 69%);
   box-shadow: hsl(233, 100%, 69%) 2.4px 2.4px 3.2px;
+}
+.btn-blue:hover {
+  background-color: hsl(233deg 100% 75%);
 }
 .box {
   margin-top: 5em;
