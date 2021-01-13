@@ -153,6 +153,10 @@ footer .for-flex {
   text-align: center;
   margin: 0;
 }
+.sm-logo {
+  width: 40%;
+  height: 40%;
+}
 @media screen and (max-width: 800px){
   .header {
     background-image: url('./images/bg-header-mobile.png');
@@ -202,5 +206,8 @@ footer .for-flex {
   }
   .last-sentence {
     margin-top: 3em;
+  }
+  .footer1 {
+    text-align: center;
   }
 }
