@@ -209,7 +209,7 @@ footer img {
 .footer-input {
   display: flex;
   justify-content: space-between;
-  align-items: center;
+  align-items: flex-start;
 }
 .sm-btn {
   width: 30%;
@@ -225,16 +225,38 @@ footer img {
   background-color: hsl(322deg 100% 74%);
 }
 input {
-  width: 60%;
+  width: 85%;
   height: 100%;
   padding: 1em;
   border-radius: 0.6em;
   border: none;
 }
+.inputRed {
+  border: 1px solid red;
+}
+.inputGreen {
+  border: 1px solid #06ff06;
+}
+.error {
+  display: block;
+  color: #ff4242;
+  margin: 0.5em 0 0 0;
+  text-align: left;
+  font-size: .8rem;
+}
+.valid {
+  display: block;
+  color: #06ff06;
+  margin: 0.5em 0 0 0;
+  text-align: left;
+  font-size: .8rem;
+}
+.field {
+  width: 100%;
+}
 .attribution {
   padding: 3em 0;
   text-align: right;
-
 }
 .attribution a {
   text-decoration: none;
@@ -256,12 +278,15 @@ input {
   .navbar img {
     width: 40%;
   }
+  .navbar-btn {
+    padding: 0.5em 1em;
+  }
   .navbar {
     margin: 0 auto;
     padding: 2em 1.5em;
   }
   .pink-btn {
-    font-size :15px;
+    font-size : 15px;
   }
   .banner {
     width: 90%;
@@ -291,6 +316,17 @@ input {
     width: 90%;
     margin: 3em auto;
     padding: 5em 1.5em;
+    text-align: center;
+  }
+  .card-text h1 {
+    font-size: 24px;
+    margin: 2em 0 1em 0;
+    font-family: var(--heading-font);
+  }
+
+  .card-text p {
+    font-size: 17px;
+    opacity: 0.7;
   }
   .card img {
     width: 100%;
@@ -355,7 +391,7 @@ input {
                       url('./images/bg-section-bottom-mobile-2.svg'),
                       url('./images/bg-footer-top-mobile.svg');
     background-repeat: no-repeat, no-repeat, no-repeat, no-repeat, no-repeat;
-    background-position: 50% 33.5%, 50% 47.5%, 50% 60.9%, 50% 75%, 50% 81.5%;
+    background-position: 50% 33.7%, 50% 48%, 50% 60.3%, 50% 74.5%, 50% 81.2%;
     margin: 0;
   }
 };

@@ -9,6 +9,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com">
   <link href="https://fonts.googleapis.com/css2?family=Open+Sans:wght@400;600;700&family=Poppins:wght@700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
+  <script src="main.js" defer></script>
 </head>
 <body>
   <div class="navbar">
@@ -89,10 +90,14 @@
         <div class="for-width">
           <p>To recieve tips on how to grow your community, sign up to our weekly newsletter. We’ll never send you spam or pass on your email address</p>
         </div>
-        <div class="footer-input">
-          <input type="text">
-          <button class="sm-btn">Subscribe</button>
-        </div>
+        <form action="#" class="footer-input">
+          <div class="field">
+            <input type="email" name="email" id="email">
+            <p class="result-text"></p>
+          </div>
+          <button id="submit-btn" class="sm-btn">Subscribe</button>
+        </form>
+
       </div>
       <div class="footer3">
         <a href="#"><i class="fab fa-facebook-square"></i></a>
