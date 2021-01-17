@@ -9,7 +9,7 @@
   <title>Fylo landing page with dark theme and features grid</title>
   <link rel="stylesheet" href="style.css">
   <link rel="stylesheet" href="https://pro.fontawesome.com/releases/v5.10.0/css/all.css" integrity="sha384-AYmEC3Yw5cVb3ZcuHtOA93w35dYTsvhLPVnYs9eStHfGJvOvKxVfELGroGkvsg+p" crossorigin="anonymous"/>
-
+  <script src="main.js" defer></script>
 </head>
 <body>
     <div class="navbar">
@@ -121,10 +121,14 @@
         <h1 class="banner-title sm-title">Get early access today</h1>
         <p class="banner-text sm-text">It only takes a minute to sign up and our free starter tier is extremely generous. If you have any questions, our support team would be happy to help you.</p>
       </div>
-      <div class="for-flex">
-        <input type="text" placeholder="email@example.com" class="input">
-        <button class="btn sm-btn">Get Started For Free</button>
-      </div>
+      <form action="#" class="email-form">
+        <div class="field">
+          <input type="email" name="email" id="email" placeholder="email@example.com">
+          <p class="result-text"></p>
+        </div>
+        <button id="submit-btn" class="sm-btn">Get Started For Free</button>
+      </form>
+
     </div>
 
   <footer>
@@ -163,8 +167,9 @@
           </div>
         </div>
       </div>
-      <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. Coded by Juyeon Kim.</p>
+      <p class="attribution">Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>Coded by Juyeon Kim.</p>
     </div>
   </footer>
+
 </body>
 </html>
