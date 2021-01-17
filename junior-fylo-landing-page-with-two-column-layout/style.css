@@ -140,6 +140,12 @@ body {
 #email-last.input-style.inputRed {
   border: 1px solid red;
 }
+.input-style.inputGreen {
+  border: 1px solid #06ff06;
+}
+#email-last.input-style.inputGreen {
+  border: 1px solid #06ff06;
+}
 .input-style {
   width: 90%;
   padding: 1em;

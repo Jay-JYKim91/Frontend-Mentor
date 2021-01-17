@@ -42,6 +42,7 @@ function validateEmailLast(userEmail) {
 }
 
 const showError = (err) => {
+  emailForm.classList.remove('inputGreen');
   resultText.classList.remove("valid");
   emailForm.classList.add('inputRed');
   resultText.classList.add("error");
@@ -56,6 +57,7 @@ const showError = (err) => {
 }
 
 const showErrorLast = (err) => {
+  emailFormLast.classList.remove('inputGreen');
   resultTextLast.classList.remove("valid");
   emailFormLast.classList.add('inputRed');
   resultTextLast.classList.add("error");
@@ -71,12 +73,16 @@ const showErrorLast = (err) => {
 
 const showSuccess = () => {
   resultText.classList.remove("error");
+  emailForm.classList.remove('inputRed');
   resultText.classList.add("valid");
+  emailForm.classList.add('inputGreen');
   resultText.textContent = "Valid email address"
 }
 
 const showSuccessLast = () => {
+  emailFormLast.classList.remove('inputRed');
   resultTextLast.classList.remove("error");
   resultTextLast.classList.add("valid");
+  emailFormLast.classList.add("inputGreen");
   resultTextLast.textContent = "Valid email address"
 }
