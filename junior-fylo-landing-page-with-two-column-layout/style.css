@@ -74,10 +74,71 @@ body {
   margin-bottom: 1em;
 }
 .banner-inputbox {
-  display: flex;
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  width: 100%;
+  margin: 1em auto;
+  grid-gap: 1rem;
+  padding-top: 1rem;
 }
 .banner-input {
-  flex-basis: 60%;
+  width: 80%;
+}
+.banner-input input {
+  width: 100%;
+  padding: 1rem;
+  border-radius: 0.5rem;
+  font-family: "Open Sans", sans-serif;
+  border: 1px solid black;
+}
+.banner-btn button{
+  display: inline-block;
+  background-color: var(--bright-blue);
+  padding: 1.2rem 1em;
+  font-family: var(--special-font);
+  font-weight: 700;
+  font-size: .8rem;
+  color: white;
+  border-radius: 0.5rem;
+  width: 80%;
+  cursor: pointer;
+  border: none;
+}
+.result-text.error {
+  display: block;
+  color: #ff4242;
+  margin: 0.5em 0 0 0;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 16px;
+}
+.result-text-last.error {
+  display: block;
+  color: white;
+  margin: 0.3em 0;
+  text-align: left;
+  font-size: 16px;
+}
+.result-text.valid {
+  display: block;
+  color: #06ff06;
+  margin: 0.5em 0 0 0;
+  text-align: left;
+  padding-left: 1rem;
+  font-size: 16px;
+}
+.result-text-last.valid {
+  display: block;
+  color: white;
+  margin: 0.3em 0 0 0;
+  text-align: left;
+  font-size: 16px;
+}
+.input-style.inputRed {
+  border: 1px solid red;
+}
+#email-last.input-style.inputRed {
+  border: 1px solid red;
 }
 .input-style {
   width: 90%;
@@ -85,15 +146,6 @@ body {
   border-radius: 0.5em;
   border: 1px solid black;
   font-family: var(--special-font);
-}
-.banner-btn button {
-  font-family: var(--special-font);
-  background-color: var(--bright-blue);
-  border-radius: 0.5em;
-  font-weight: bold;
-  color: white;
-  padding: 1.1em 5em;
-  border: none;
 }
 .banner-btn button:hover {
   background-color: hsl(224deg 100% 70%);
@@ -151,6 +203,9 @@ body {
 .last {
   background-color: var(--desaturated-blue);
 }
+.last-inputbox {
+  align-content: space-between;
+}
 .last .container {
   padding: 5em 0;
   color: white;
@@ -168,11 +223,12 @@ body {
   flex-basis: 40%;
 }
 .last-input .input-style {
-  margin-bottom: 2em;
   border: none;
 }
 .last-inputbox .banner-btn button {
-  padding: 1em 2em;
+  padding: 1em;
+  width: 50%;
+  margin-top: 2em;
 }
 .footer-logo {
   filter: brightness(0) invert(1);
@@ -231,7 +287,18 @@ footer {
 }
 @media screen and (max-width: 800px){
   .navbar-img img {
-    width: 70%;
+    width: 80%;
+  }
+  .navbar a {
+    font-size: 18px;
+    margin-right: 0.5em;
+  }
+  .navbar-menus {
+    width: 100%;
+    text-align: right;
+  }
+  .navbar {
+    margin: 2em 1.5em 4em 1.5em;
   }
   .banner {
     display: flex;
@@ -243,33 +310,33 @@ footer {
   }
   .banner-text h1 {
     text-align: center;
-    font-size: 33px;
+    font-size: 26px;
     margin-bottom: 1em;
   }
   .banner-text p {
     text-align: center;
-    font-size: 22px;
+    font-size: 18px;
   }
   .banner-inputbox {
-    flex-direction: column;
+    grid-template-columns: 100%;
   }
-  .input-style {
-    width: 90%;
+  #email.input-style input{
+    width: 100%;
     margin-bottom: 1em;
   }
   .banner-btn button {
-    width: 96%;
+    width: 90%;
   }
   body {
     background-image: url('./images/bg-curve-mobile.svg');
-/*    background-position: center 13%;*/
+    background-position: center 34.2%;
   }
   .main-container {
     display: flex;
     flex-direction: column-reverse;
   }
   .main-container .banner-text h1 {
-    font-size: 22px;
+    font-size: 18px;
     margin-top: 2em;
   }
   .text-size {
@@ -277,6 +344,10 @@ footer {
   }
   .text-size p {
     text-align: left;
+    font-size: 16px;
+  }
+  .card p{
+    font-size: 13.5px;
   }
   .arrow-sentence {
     text-align: center;
@@ -285,16 +356,24 @@ footer {
     width: 80%;
     margin: 3em auto;
   }
+  .last .container .text h1 {
+    font-size: 24px;
+  }
+  .last {
+    padding: 0 2em;
+  }
   .last .container {
     flex-direction: column;
     text-align: center;
   }
   .last .container .text p {
-    font-size: 20px;
+    font-size: 14px;
+    line-height: 20px;
     margin-bottom: 2em;
   }
   .footer-flex {
     flex-direction: column;
+    margin-bottom: 1em;
   }
   .footer1, .footer2, .footer3, .footer4 {
     margin-bottom: 2em;
@@ -304,5 +383,21 @@ footer {
   }
   .footer4, .attribution {
     text-align: center;
+  }
+  .result-text.error {
+    margin: 0.2em 0 0 0;
+    font-size: 12px;
+  }
+  .result-text-last.error {
+    font-size: 12px;
+  }
+  .result-text.valid {
+    margin: 0.2em 0 0 0;
+  }
+  .result-text-last.valid {
+    font-size: 12px;
+  }
+  #submit-btn-last {
+    width: 100%;
   }
 }
