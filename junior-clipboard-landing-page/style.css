@@ -21,7 +21,7 @@ body {
   font-size: 45px;
 }
 .header-content {
-  opacity: 50%;
+  opacity: 40%;
   font-size: 21px;
   margin: 1em auto 2em auto;
 }
@@ -143,11 +143,17 @@ footer .for-flex {
   display: grid;
   grid-template-columns: repeat(3, 1fr);
 }
-.footer2 p {
+.footer2 a {
   margin: 0 50px 20px 0;
 }
-.footer3 svg {
+.footer2 a:hover {
+  color: hsl(171, 66%, 44%);
+}
+.footer3 a {
   margin-right: 1em;
+}
+.footer3 a:hover {
+  color: hsl(171, 66%, 44%);
 }
 .last-sentence {
   text-align: center;
@@ -163,14 +169,26 @@ footer .for-flex {
     background-size: cover;
   }
   .container {
-    width: 400px;
+    width: 90%;
+    margin: 0 auto;
   }
   .header-title {
-    font-size: 40px;
+    font-size: 33px;
+  }
+  .header-content {
+    font-size: 18px;
+    margin: 1em auto 2em auto;
   }
   .btn {
     width: 100%;
     margin: 1em auto;
+  }
+  .text {
+    margin: 3em auto;
+    padding: 0;
+    width: 80%;
+    text-align: center;
+
   }
   .for-flex {
     display: flex;
@@ -201,8 +219,15 @@ footer .for-flex {
     text-align: center;
     display: flex;
   }
+  .footer2 a {
+    margin: 1em 0;
+  }
   .footer2 p {
     margin: 0 0 1em 0;
+  }
+  .footer3 {
+    display: flex;
+    justify-content: space-between;
   }
   .last-sentence {
     margin-top: 3em;
