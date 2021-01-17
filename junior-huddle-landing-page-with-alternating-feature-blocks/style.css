@@ -162,8 +162,12 @@ footer {
   .container {
     width: 98%;
   }
+  .banner {
+    padding: 2em 1em;
+  }
   .main-logo {
     height: 30px;
+    width: 40%;
   }
   .banner-grid {
     grid-template-columns: 100%;
@@ -171,6 +175,20 @@ footer {
   }
   .banner-title {
     font-size: 28px;
+  }
+  .banner-text {
+    width: 100%;
+  }
+  .banner-content {
+    width: 90%;
+    margin: 2em auto;
+    line-height: 25px;
+  }
+  .title {
+    font-size: 23px;
+  }
+  .content {
+    font-size: 15px;
   }
   .btn-pink {
     width: 80%;
@@ -180,7 +198,7 @@ footer {
     padding: 0.5em 2em;
   }
   .cards {
-    width: 95%;
+    width: 90%;
     margin: 5em auto;
   }
   .card {
@@ -199,9 +217,9 @@ footer {
     margin-bottom: 2em;
   }
   .last-card {
-    width: 75%;
+    width: 80%;
     margin: 0 auto;
-    padding: 3em;
+    padding: 3em 1.5em;
     position: relative;
     bottom: -100px;
     z-index: 99;
@@ -210,16 +228,16 @@ footer {
     align-items: center;
   }
   .last-card .banner-title {
-    font-size: 22px;
+    font-size: 18px;
   }
   .big-btn {
-    width: 80%;
-    font-size: 18px;
+    width: 90%;
+    font-size: 15px;
     padding: 1em 2em;
     margin-bottom: 0;
   }
   .footer-container {
-    width: 90%;
+    width: 85%;
     margin: 0 auto;
   }
   .footer-flex {
@@ -231,13 +249,14 @@ footer {
   }
   .footer2 {
     grid-template-columns: 1fr;
+    margin: 2em 0;
   }
   .footer2 p {
     margin-bottom: 1em;
   }
   .footer3 {
     text-align: center;
-    margin-bottom: 1em;
+    margin-bottom: 2em;
   }
   .last-container {
     text-align: center;
