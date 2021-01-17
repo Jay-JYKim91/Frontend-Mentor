@@ -7,7 +7,7 @@ body {
   background-image: url('./images/bg-desktop.png');
   background-repeat: no-repeat;
   min-height: 100vh;
-  background-position: bottom;
+  background-position: 50% 75%;
 }
 p {
   margin: 0;
@@ -111,9 +111,12 @@ p {
   top: 1px;
 }
 .attribution {
-  position: fixed;
-  bottom: 3em;
-  left: 35%;
+  text-align: center;
+  margin-top: 20em;
+  color: hsl(243, 100%, 93%);
+}
+.attribution a {
+  text-decoration: none;
   color: hsl(243, 100%, 93%);
 }
 .position {
@@ -124,31 +127,36 @@ p {
   body {
     background-image: url('./images/bg-mobile.png');
     background-size: cover;
+    margin: 0 2em;
   }
   .container {
+    width: 100%;
     display: flex;
     flex-direction: column;
-    padding: 10em 3em;
+    padding: 15em 0;
+    margin: 0 auto;
   }
   .left {
     margin-bottom: 2em;
+    width: 250px;
   }
   .right {
-    width: 310px;
+    width: 260px;
     height: 100px;
+    margin-left: 0;
   }
   .dot {
-    left: 239px;
+    left: 198px;
   }
   .arrow_box {
-    left: 60px;
+    left: 40px;
     top: 90px;
   }
   .arrow_box:after {
     display: none;
   }
   .attribution {
-    left: 15%;
+    margin-top: 0;
   }
   p {
     text-align: center;
