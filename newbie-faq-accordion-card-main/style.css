@@ -1,0 +1,49 @@
+:root {
+  --body-font: 'Kumbh Sans', sans-serif;
+
+  --text-blue: hsl(238, 29%, 16%);
+  --text-red: hsl(14, 88%, 65%);
+
+  --gradient-violet: hsl(273, 75%, 66%);
+  --gradient-blue: hsl(240, 73%, 65%);
+
+  --text-very-dark-grayish-blue: hsl(237, 12%, 33%);
+  --text-dark-grayish-blue: hsl(240, 6%, 50%);
+
+  --dividers-grayish-blue: hsl(240, 5%, 91%);
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  font-family: var(--body-font);
+  text-decoration: none;
+  color: var(--text-blue);
+}
+
+body {
+  background: linear-gradient(var(--gradient-violet), var(--gradient-blue));
+  height: 100%;
+}
+
+.container {
+  width: 56%;
+  background-color: var(--dividers-grayish-blue);
+  margin: 10em auto;
+  padding: 3em;
+  border-radius: 2em;
+  display: flex;
+}
+.image-part {
+  overflow: hidden;
+}
+.image-part img {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 330px;
+  transform: translate(-18%, 35%);
+}
+@media screen and (max-width: 800px) {
+
+}
