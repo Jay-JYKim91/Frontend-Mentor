@@ -3,85 +3,212 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0"> <!-- displays site properly based on user's device -->
-
   <link rel="icon" type="image/png" sizes="32x32" href="./images/favicon-32x32.png">
-  
-  <title>Frontend Mentor | [Challenge Name Here]</title>
-
-  <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
-  <style>
-    .attribution { font-size: 11px; text-align: center; }
-    .attribution a { color: hsl(228, 45%, 44%); }
-  </style>
+  <title>Theme Switcher</title>
+  <link rel="preconnect" href="https://fonts.gstatic.com">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css">
+  <script src="main.js" defer></script>
 </head>
-<body>
+<body class="bg">
+  <div class="container">
+    <div class="top-bg"></div>
+    <section class="flex title-flex">
+      <div>
+        <h1 class="main-title">Social Media Dashboard</h1>
+        <p class="sm-title gray-text">Total Followers: 23,004</p>
+      </div>
+      <hr class="mb">
+      <div class="flex switch-flex">
+        <p class="dark-text">Dark Mode</p>
+        <label class="switch">
 
-  Social Media Dashboard
-  Total Followers: 23,004
+          <input type="checkbox" class="checkbox">
+          <span class="slider round"></span>
+        </label>
+      </div>
+    </section>
 
-  Dark Mode
+    <article class="grid follower-grid">
+      <div class="follower-card">
+        <div class="head facebook-head"></div>
+        <div class="follower-padding">
+          <div class="flex follower-flex">
+            <img src="./images/icon-facebook.svg" alt="facebook">
+            <p class="user-name gray-text">@nathanf</p>
+          </div>
+          <h1 class="follower-num">1987</h1>
+          <p class="gray-text follower-upcase">Followers</p>
+          <div class="flex flex-center">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="up-text">12 Today</span>
+          </div>
+        </div>
+      </div>
 
-  
+      <div class="follower-card">
+        <div class="head twitter-head"></div>
+        <div class="follower-padding">
+          <div class="flex follower-flex">
+            <img src="./images/icon-twitter.svg" alt="twitter">
+            <p class="user-name gray-text">@nathanf</p>
+          </div>
+          <h1 class="follower-num">1044</h1>
+          <p class="gray-text follower-upcase">Followers</p>
+          <div class="flex flex-center">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="up-text">99 Today</span>
+          </div>
+        </div>
+      </div>
 
-  @nathanf
-  1987
-  Followers
-  12 Today
+      <div class="follower-card">
+        <div class="head instagram-head"></div>
+        <div class="follower-padding">
+          <div class="flex follower-flex">
+            <img src="./images/icon-instagram.svg" alt="instagram">
+            <p class="user-name gray-text">@realnathanf</p>
+          </div>
+          <h1 class="follower-num">11k</h1>
+          <p class="gray-text follower-upcase">Followers</p>
+          <div class="flex flex-center">
+            <img src="./images/icon-up.svg" alt="up">
+            <span class="up-text">1099 Today</span>
+          </div>
+        </div>
+      </div>
 
-  @nathanf
-  1044
-  Followers
-  99 Today
+      <div class="follower-card">
+        <div class="head youtube-head"></div>
+        <div class="follower-padding">
+          <div class="flex follower-flex">
+            <img src="./images/icon-youtube.svg" alt="youtube">
+            <p class="user-name gray-text">Nathan F.</p>
+          </div>
+          <h1 class="follower-num">8239</h1>
+          <p class="gray-text follower-upcase">Subscribers</p>
+          <div class="flex flex-center">
+            <img src="./images/icon-down.svg" alt="down">
+            <span class="down-text">144 Today</span>
+          </div>
+        </div>
+      </div>
+    </article>
 
-  @realnathanf
-  11k
-  Followers
-  1099 Today
+    <article>
+      <h1 class="gray-text overview-text">Overview - Today</h1>
+      <div class="grid overview-grid">
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Page Views</p>
+            <img src="./images/icon-facebook.svg" alt="facebook">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">87</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-up.svg" alt="up">
+              <span class="up-text">3%</span>
+            </div>
+          </div>
 
-  Nathan F.
-  8239
-  Subscribers
-  144 Today
+        </div>
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Likes</p>
+            <img src="./images/icon-facebook.svg" alt="facebook">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">52</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-down.svg" alt="down">
+              <span class="down-text">2%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Likes</p>
+            <img src="./images/icon-instagram.svg" alt="instagram">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">5462</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-up.svg" alt="up">
+              <span class="up-text">2257%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Profile Views</p>
+            <img src="./images/icon-instagram.svg" alt="instagram">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">52k</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-up.svg" alt="up">
+              <span class="up-text">1375%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Retweets</p>
+            <img src="./images/icon-twitter.svg" alt="twitter">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">117</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-up.svg" alt="up">
+              <span class="up-text">303%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Likes</p>
+            <img src="./images/icon-twitter.svg" alt="twitter">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">507</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-up.svg" alt="up">
+              <span class="up-text">553%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Likes</p>
+            <img src="./images/icon-youtube.svg" alt="youtube">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">107</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-down.svg" alt="down">
+              <span class="down-text">19%</span>
+            </div>
+          </div>
+        </div>
+        <div class="overview-card">
+          <div class="flex overview-flex">
+            <p class="sm-title gray-text">Total Views</p>
+            <img src="./images/icon-youtube.svg" alt="youtube">
+          </div>
+          <div class="flex overview-flex overview-margin">
+            <h3 class="overview-num">1407</h3>
+            <div class="flex flex-center">
+              <img src="./images/icon-down.svg" alt="down">
+              <span class="down-text">12%</span>
+            </div>
+          </div>
+        </div>
+      </div>
+    </article>
 
-
-
-  Overview - Today
-
-  Page Views
-  87
-  3%
-
-  Likes
-  52
-  2%
-
-  Likes
-  5462
-  2257%
-
-  Profile Views
-  52k
-  1375%
-
-  Retweets
-  117
-  303%
-
-  Likes
-  507
-  553%
-
-  Likes
-  107
-  19%
-
-  Total Views
-  1407
-  12%
-  
-  <div class="attribution">
-    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
-    Coded by <a href="#">Your Name Here</a>.
+    <p class="attribution">
+      Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>.<br>Coded by Juyeon Kim.
+    </p>
   </div>
 </body>
 </html>
