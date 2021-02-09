@@ -23,26 +23,99 @@
 
 body {
   background: linear-gradient(var(--gradient-violet), var(--gradient-blue));
-  height: 100%;
+  width: 100wh;
+  height: 100vh;
 }
 
 .container {
-  width: 56%;
-  background-color: var(--dividers-grayish-blue);
-  margin: 10em auto;
-  padding: 3em;
-  border-radius: 2em;
-  display: flex;
-}
-.image-part {
+  width: 900px;
+  height: 480px;
+  background-color: #fff;
+  border-radius: 1em;
+    /* Centralizando usando position | transform */
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%,-50%);
+    /* Sombra */
+  box-shadow: 10px 25px 20px 0 rgba(0,0,0,.2);
   overflow: hidden;
 }
-.image-part img {
+
+.illustration-box-desktop {
   position: absolute;
-  top: 0;
-  left: 0;
-  width: 330px;
-  transform: translate(-18%, 35%);
+  margin-left: -2.2%;
+  margin-top: 18%;
+}
+.container-box {
+  width: 150px;
+  height: 150px;
+  z-index: 1;
+  border-radius: 1em;
+  position: absolute;
+  top: 49%;
+  left: 17%;
+  transform: translate(-50%,-50%);
+}
+.bg-pattern-desktop {
+  float: left;
+  margin-left: -56%;
+  margin-top: -29%;
+  height: 180%;
+}
+
+.illustration-woman-desktop {
+  position: absolute;
+  height: 74%;
+  margin-left: -10%;
+  margin-top: 5.8%;
+}
+.text {
+  padding: 60px 20px 30px;
+  margin-left: 50%;
+  margin-right: 5%;
+  text-align: left;
+  font-size: 16px;
+}
+.title {
+  margin-bottom: 1em;
+}
+.question {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 1em;
+  margin-top: 1em;
+}
+.question.active .arrow{
+  transform: rotate(180deg);
+}
+.question p {
+  color: var(--text-very-dark-grayish-blue);
+  font-size: 15px;
+}
+.question.active p {
+  color: black;
+  font-weight: bold;
+}
+hr {
+  color: var(--dividers-grayish-blue);
+  opacity: 0.3;
+}
+.answer {
+  display: none;
+  margin-bottom: 1em;
+}
+.answer p {
+  color: var(--text-dark-grayish-blue);
+  line-height: 1.5;
+  font-size: 13px;
+}
+.attribution {
+  position: absolute;
+  bottom: 3%;
+  left: 40%;
+  text-align: center;
 }
 @media screen and (max-width: 800px) {
 
